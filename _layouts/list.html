@@ -1,0 +1,30 @@
+---
+layout: default
+---
+<h1>
+    {{page.title}}
+</h1>
+<p>
+    {{ content }}
+</p>
+
+<ul class="p-list">
+    {%- for post in site.posts -%}
+    <li>
+        <a href="{{post.url}}">
+
+            <div class="d-flex justify-content-between">
+                <h3 class="p-list-title"> {{post.title}}</h3>
+                {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" | localize: "es" -%}
+                <span class="card-date">{{ post.date | date: date_format }}</span>
+            </div>
+        </a>
+        <p class="p-list-desc">
+            {{ post.content | markdownify | strip_html | truncatewords: 30 }}
+        </p>
+
+
+    </li>
+
+    {%- endfor -%}
+</ul>

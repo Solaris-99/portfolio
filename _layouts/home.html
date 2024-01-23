@@ -1,0 +1,44 @@
+---
+layout: default
+---
+
+<div class="home">
+
+    <h1 class="page-heading">Emanuel Cifuentes</h1>
+  {{ content }}
+
+  {%- if site.posts.size > 0 -%}
+    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+
+    <div class="card-container">
+
+      {%- for post in site.posts limit: 3  -%}
+      <div>
+
+        <a class="post-link card-link" href="{{ post.url | relative_url }}">
+          <div class="card">
+            
+            <img class="card-image" src="{{ post.image | default: 'assets/images/default.jpg'}}">
+            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" | localize: "es" -%}
+            <span class="card-date">{{ post.date | date: date_format }}</span>
+            <div class="card-body">
+              
+              <h4>
+                {{ post.title | escape }}
+              </h4>
+              {%- if site.show_excerpts -%}
+              <p class="card-excerpt">
+                {{ post.content | markdownify | strip_html | truncatewords: 10 }}
+              </p>
+              {%- endif -%}
+            </div>
+          </div>
+        </a>
+      </div>
+      {%- endfor -%}
+
+    </div>
+    <a class="btn mx-auto bold-link" href="./projects/">Ver más</a>
+  {%- endif -%}
+
+</div>
