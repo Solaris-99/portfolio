@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Aplicación de telcado (cliente)
+title: Aplicación de teclado (cliente)
 categories: personal
 image: "assets/images/keyboard.jpg"
 p_url: "https://github.com/Solaris-99/keyboard-svr"

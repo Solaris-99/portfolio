@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Aplicación de telcado (servidor)
+title: Aplicación de teclado (servidor)
 categories: personal
 p_url: "https://github.com/Solaris-99/keyboard-app"
 p_url_name: "github"
