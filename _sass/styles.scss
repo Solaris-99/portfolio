@@ -68,6 +68,11 @@
     transition: font-weight 0.3s ease;
 }
 
+.d-block{
+    display: block;
+}
+
+
 .btn:visited{
     color: white;
 }
@@ -93,6 +98,10 @@
 
 .justify-content-between{
     justify-content: space-between;
+}
+
+.mb-3 {
+    margin-bottom: 1rem;
 }
 
 @media (max-width: 900px ){
