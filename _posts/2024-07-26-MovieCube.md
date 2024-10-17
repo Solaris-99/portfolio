@@ -2,7 +2,7 @@
 layout: post
 title: MovieCube
 categories: academic
-image: "assets/images/library-manager-dv.png"
+image: "assets/images/MovieCube.png"
 p_url: "https://github.com/Solaris-99/tpProdWeb"
 p_url_name: "github"
 ---
