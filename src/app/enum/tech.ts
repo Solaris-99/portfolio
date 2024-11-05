@@ -1,0 +1,26 @@
+
+export enum tech {
+    java,
+    bash,
+    python,
+    numpy,
+    pandas,
+    colabs, 
+    php,
+    html,
+    css,
+    javascript,
+    typescript,
+    node,
+    bootstrap,
+    tailwind,
+    react,
+    nextjs,
+    electron,
+    spreadsheets,
+    gsuite,
+    appscript,
+    mysql,
+    postgres,
+    sqlite
+}
