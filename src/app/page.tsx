@@ -5,7 +5,7 @@ import { translations } from '../../public/locale/translations';
 import { useState } from 'react';
 import ProjectCard from '@/app/ui/ProjectCard';
 import Nav from '@/app/ui/Nav'
-
+import { projects } from '../../public/locale/projects';
 export default function Home(){
     const [lang, setLang] = useState<"en"|"es">('en');
     const changeLang = ()=>{
@@ -39,10 +39,11 @@ export default function Home(){
                         <p>{home[lang].projectBody}</p>
                         <div className='flex max-h-50vh'>
                             <div className='w-5/12 overflow-auto'>  
-                                <ProjectCard/>
-                                <ProjectCard/>
-                                <ProjectCard/>
-                                <ProjectCard/>
+                                {
+                                    projects.map((e,i)=>{
+                                        return <ProjectCard project={e} lang={lang} key={i}/>
+                                    })
+                                }
                             </div>
                             <div>
                                 {/* <currentproject/> */}
