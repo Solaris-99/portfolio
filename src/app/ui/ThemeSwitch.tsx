@@ -7,7 +7,7 @@ export default function ThemeSwitch({handleTheme, lang}: {handleTheme: ()=>void,
     <Switch onClick={handleTheme}
       defaultSelected
       size="sm"
-      color="secondary"
+      color="primary"
       thumbIcon={({ isSelected}) =>
         isSelected ? (
           <MoonIcon/>

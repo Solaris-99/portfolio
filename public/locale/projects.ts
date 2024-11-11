@@ -1,13 +1,13 @@
-import { tech } from "@/app/enum/tech"
+import { techEntry } from "@/app/enum/tech"
 import { projectTypes } from "@/app/enum/project"
 
 type projectItemCommon = {
     name: string
     begin: Date,
-    type: projectTypes,
+    type: keyof typeof projectTypes,
     codeUrl: string,
     end?: Date,
-    tech?: Array<tech>,
+    tech?: Array<techEntry>,
     thumb?: string,
     image?: string,
     demoUrl?: string
@@ -25,11 +25,13 @@ export const projects : Array<projectItem> = [
     {
         common: {
             name: 'factorio-website',
-            type: projectTypes.academic,
+            type: "academic",
             begin: new Date(2023, 6, 4),
             end: new Date(2023, 6, 14),
             codeUrl: "https://github.com/Solaris-99/factorio-webpage",
-            tech: [tech.html, tech.javascript, tech.bootstrap, tech.css]
+            tech: ["html", "javascript", "bootstrap", "css"],
+            image:"factorio.jpg",
+            thumb:"factorio.jpg"
         },
 
         en: {
@@ -44,11 +46,13 @@ export const projects : Array<projectItem> = [
     {
         common: {
             name: 'java-hangman',
-            type: projectTypes.academic,
+            type: "academic",
             begin: new Date(2023, 6, 8),
             end: new Date(2023, 6, 30),
             codeUrl: "https://github.com/Solaris-99/java-hangman",
-            tech: [tech.java]
+            tech: ["java"],
+            image: "ahorcado.jpg",
+            thumb: "ahorcado.jpg",
         },
         en: {
             title: "Java Hangman",
@@ -62,11 +66,13 @@ export const projects : Array<projectItem> = [
     {
         common: {
             name: 'todo-list-java',
-            type: projectTypes.personal,
+            type: "personal",
             begin: new Date(2024, 2, 19),
             end: new Date(2024, 3, 11),
             codeUrl: "https://github.com/Solaris-99/java-toDoList",
-            tech: [tech.java]
+            tech: ["java"],
+            image: "todolist-java.png",
+            thumb: "todolist-java.png"
         },
         en: {
             title: "Java TodoList",
@@ -80,11 +86,13 @@ export const projects : Array<projectItem> = [
     {
         common: {
             name: 'eventar',
-            type: projectTypes.academic,
+            type: "academic",
             begin: new Date(2023, 9, 22),
             end: new Date(2023, 11, 18),
             codeUrl: "https://github.com/Solaris-99/EventAr",
-            tech: [tech.html, tech.css, tech.bootstrap, tech.javascript, tech.php, tech.mysql]
+            tech: ["html", "css", "bootstrap", "javascript", "php", "mysql"],
+            image: "eventar.jpg",
+            thumb: "eventar.jpg"
         },
         en: {
             title: "EventAr",
@@ -98,11 +106,13 @@ export const projects : Array<projectItem> = [
     {
         common: {
             name: "dv-PA-library",
-            type: projectTypes.academic,
+            type: "academic",
             begin: new Date(2024, 6, 14),
             end: new Date(2024, 6, 31),
             codeUrl: "https://github.com/Solaris-99/dv-PA-library",
-            tech: [tech.java, tech.mysql]
+            tech: ["java", "mysql"],
+            image: "library-manager-dv.png",
+            thumb: "library-manager-dv.png"
         },
         en: {
             title: "Library-DV",
@@ -117,11 +127,13 @@ export const projects : Array<projectItem> = [
     {
         common: {
             name: 'music-fetcher',
-            type: projectTypes.personal,
+            type: "personal",
             begin: new Date(2024, 3, 17),
             end: new Date(2024, 4, 28),
             codeUrl: "https://github.com/Solaris-99/music-fetcher",
-            tech: [tech.typescript, tech.react, tech.css, tech.tailwind, tech.electron, tech.node]
+            tech: ["typescript", "react", "css", "tailwind", "electron", "node"],
+            image: "music-fetcher.png",
+            thumb: "music-fetcher.png"
         },
         en: {
             title: "MusicFetcher",
@@ -135,11 +147,13 @@ export const projects : Array<projectItem> = [
     {
         common: {
             name: 'MovieCube',
-            type: projectTypes.academic,
+            type: "academic",
             begin: new Date(2024, 4, 26),
             end: new Date(2024, 6, 26),
             codeUrl: "https://github.com/Solaris-99/tpProdWeb",
-            tech: [tech.php, tech.css, tech.mysql, tech.html]
+            tech: ["php", "css", "mysql", "html"],
+            image: "MovieCube.png",
+            thumb: "MovieCube.png"
         },
         en: {
             title: "MovieCube",

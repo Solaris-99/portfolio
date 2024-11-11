@@ -17,26 +17,27 @@ export default function Nav({lang, setLang, className}: {lang:"en"| "es", setLan
   return (
     <Navbar className={className}>
       <NavbarBrand>
+        <p>&lt;/&gt;</p>
         <p className="font-bold text-inherit">Emanuel Cifuentes</p>
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem>
-          <Link color="foreground" href="#">
+          <Link color="foreground" href="#home">
             {navLocale[lang].home }
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#">
+          <Link color="foreground" href="#projects">
             {navLocale[lang].projects }        
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#">
+          <Link color="foreground" href="#experience">
               {navLocale[lang].experience }          
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#">
+          <Link color="foreground" href="#contact">
               {navLocale[lang].contact }          
           </Link>
         </NavbarItem>
