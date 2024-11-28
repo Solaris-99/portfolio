@@ -6,10 +6,10 @@ export default function Contact({name, link, icon}:{name: string, link: string, 
     isFooterBlurred
     className="border-none p-2 m-2 hover:outline-sky-400"
     >
-        <a href={link}>
+        <a href={link} target="_blank">
         {icon}
-        <CardFooter className="text-center block p-2 w-fit mx-auto">
-            <p className="text-tiny text-white/80">{name}</p>
+        <CardFooter className="text-center block p-2 w-fit mx-auto rounded-lg">
+            <p className="text-tiny">{name}</p>
         </CardFooter>
         </a>
     </Card>

@@ -17,7 +17,10 @@ export default function Nav({lang, setLang, className}: {lang:"en"| "es", setLan
   return (
     <Navbar className={className}>
       <NavbarBrand>
-        <p>&lt;/&gt;</p>
+        <div className="mr-2 font-mono">
+            &gt;
+            <span className="blinking-cursor">_</span>
+        </div>
         <p className="font-bold text-inherit">Emanuel Cifuentes</p>
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex gap-4" justify="center">

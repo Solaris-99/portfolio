@@ -6,8 +6,12 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.h-75vh{
-  height: 75vh;
+.h-90vh{
+  height: 90vh;
+}
+
+.h-min-100vh{
+  min-height: 100vh;
 }
 
 h2{
@@ -21,4 +25,18 @@ h1, h2, h3{
 section{
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+
+.blinking-cursor {
+  animation: blink 1s steps(2, start) infinite;
+}
+
+@keyframes blink {
+  0% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+  }
 }

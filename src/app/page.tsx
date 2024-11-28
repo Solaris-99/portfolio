@@ -13,6 +13,8 @@ import Contact from './ui/Contact';
 import LinkedIn from './ui/icons/LinkedIn';
 import Gmail from './ui/icons/Gmail';
 import ProjectView from './ui/ProjectView';
+import { Image } from '@nextui-org/react';
+
 export default function Home(){
     const [lang, setLang] = useState<"en"|"es">('en');
     const [selectedProject, setSelectedProject] = useState<projectItem>(projects[projects.length-1]);
@@ -30,32 +32,35 @@ export default function Home(){
         <div>
             <Nav className="border-b border-sky-400" lang={lang} setLang={changeLang} ></Nav>
             <div className='w-11/12 mx-auto '>
-                <header id='home' className='flex my-48 py-4'>
-                    <div className='w-2/4'>
+                <header id='home' className='flex items-center justify-center h-screen flex-wrap'>
+                    <div className='md:w-2/4 h-fit'>
                         <p className="text-xl">{home[lang].greeting[0]}</p>
                         <h2 className='text-3xl'>{home[lang].greeting[1]}</h2> {/* name */}
                         <h1 className='text-6xl'>{home[lang].greeting[2]}</h1> {/* title */}
                         <p>{home[lang].bio}</p>
                     </div>
-                    <div>
-
+                    <div className='h-fit w-fit'>
+                        <Image src="/img/deco.png" alt={lang=="es"?"Logo de manos escribiendo en el teclado":"Logo of hands typing on keyboard"} width={300} height={300} />
                     </div>
                 </header>
                 <Divider/>
                 <main>
-                    <section id='projects'>
+                    <section id='projects' className='lg:h-screen'>
                         <h2>{home[lang].projectTitle}</h2>
-                        <div className='flex h-75vh'>
-                            <div className='w-5/12 overflow-auto'>  
+
+                        <div className='lg:flex h-full '>
+                            <div className='lg:w-5/12 overflow-auto flex lg:block'>  
                                 {
                                     projects.toReversed().map((e,i)=>{
                                         return <ProjectCard setProject={setSelectedProject} project={e} lang={lang} key={i}/>
                                     })
                                 }
                             </div>
-                            <div className='w-7/12 p-2'>
+
+                            <div className='lg:w-7/12 p-2 h-full'>
                                 <ProjectView project={selectedProject} lang={lang} />
                             </div>
+
                         </div>
                     </section>
                     <Divider/>

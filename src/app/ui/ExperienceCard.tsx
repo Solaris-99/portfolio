@@ -3,7 +3,7 @@ import { expItem } from "../../../public/locale/experience"
 import TechIcon from "./TechIcon"
 export default function ExperienceCard({exp, lang}:{exp:expItem, lang: "es"|"en"}){
     return(
-        <Card className="w-3/12">
+        <Card className="xl:w-3/12 md:w-2/4 w-full">
             <CardHeader className="flex justify-between">
                 <h4 className="text-lg text-bold">{exp.common.title} - {exp[lang].role}</h4>
                 <p className="font-bold">
