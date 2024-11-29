@@ -17,7 +17,8 @@ export default function ProjectView({ project, lang }: { project: projectItem, l
         </CardHeader>
         <Divider/>
         <CardBody className="h-5/6 overflow-hidden">
-            <img className="object-contain block mx-auto rounded-md mb-2" style={{width:"100%", height: "100%"}} src={project.common.image?'/img/project/'+project.common.image:'/img/project/default.jpg'}  alt={project[lang].title} />
+            {/* image contains basepath prefix */}
+            <img className="object-contain block mx-auto rounded-md mb-2" style={{width:"100%", height: "100%"}} src={project.common.image?'portfolio/img/project/'+project.common.image:'portfolio/img/project/default.jpg'}  alt={project[lang].title} />
             <p className="mb-1">{project[lang].description}</p>
             <Divider/>
             <div className="project-tech-container flex justify-between mt-2">

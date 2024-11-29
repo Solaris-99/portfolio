@@ -13,7 +13,7 @@ import Contact from './ui/Contact';
 import LinkedIn from './ui/icons/LinkedIn';
 import Gmail from './ui/icons/Gmail';
 import ProjectView from './ui/ProjectView';
-import { Image } from '@nextui-org/react';
+import Image from 'next/image';
 
 export default function Home(){
     const [lang, setLang] = useState<"en"|"es">('en');

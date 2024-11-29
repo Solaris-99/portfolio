@@ -1,4 +1,5 @@
-import { Card, CardHeader, CardBody, Image, Chip } from "@nextui-org/react";
+import { Card, CardHeader, CardBody, Chip } from "@nextui-org/react";
+import Image from "next/image";
 import { projectItem } from "../../../public/locale/projects";
 import { projectTypes } from "../enum/project";
 import TechIcon from "./TechIcon";
