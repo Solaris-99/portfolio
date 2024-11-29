@@ -12,7 +12,7 @@ export default function ProjectCard({ project, lang, setProject }: { project: pr
 
     <Card className="lg:flex-row my-2 lg:h-40 lg:w-full h-52 w-52 px-1 mx-1 justify-between align-middle hover:cursor-pointer hover:outline-sky-400">
       <div className="lg:w-2/12 my-auto mx-auto">
-        <Image src={project.common.thumb?'/img/thumb/'+project.common.thumb:'/img/thumb/default.jpg'} width={125} height={125} alt={project[lang].title} className="object-cover rounded-md p-2" />
+        <Image src={project.common.thumb?'./img/thumb/'+project.common.thumb:'./img/thumb/default.jpg'} width={125} height={125} alt={project[lang].title} className="object-cover rounded-md p-2" />
       </div>
       <div className="lg:w-10/12">
         <CardHeader className="block lg:m-0 lg:pb-0 p-3">

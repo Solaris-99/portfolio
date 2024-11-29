@@ -40,7 +40,7 @@ export default function Home(){
                         <p>{home[lang].bio}</p>
                     </div>
                     <div className='h-fit w-fit'>
-                        <Image src="/img/deco.png" alt={lang=="es"?"Logo de manos escribiendo en el teclado":"Logo of hands typing on keyboard"} width={300} height={300} />
+                        <Image src="./img/deco.png" alt={lang=="es"?"Logo de manos escribiendo en el teclado":"Logo of hands typing on keyboard"} width={300} height={300} />
                     </div>
                 </header>
                 <Divider/>
