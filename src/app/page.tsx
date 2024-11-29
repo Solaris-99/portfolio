@@ -48,8 +48,8 @@ export default function Home(){
                     <section id='projects' className='lg:h-screen'>
                         <h2>{home[lang].projectTitle}</h2>
 
-                        <div className='lg:flex h-full '>
-                            <div className='lg:w-5/12 overflow-auto flex lg:block'>  
+                        <div className='lg:flex h-5/6 mt-6 '>
+                            <div className='lg:w-5/12 overflow-y-auto flex lg:block'>  
                                 {
                                     projects.toReversed().map((e,i)=>{
                                         return <ProjectCard setProject={setSelectedProject} project={e} lang={lang} key={i}/>
@@ -58,7 +58,7 @@ export default function Home(){
                             </div>
 
                             <div className='lg:w-7/12 p-2 h-full'>
-                                <ProjectView project={selectedProject} lang={lang} />
+                                    <ProjectView project={selectedProject} lang={lang} />
                             </div>
 
                         </div>

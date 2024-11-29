@@ -10,7 +10,7 @@ export default function ProjectCard({ project, lang, setProject }: { project: pr
   return (
     <div onClick={()=>{setProject(project)}} >
 
-    <Card className="lg:flex-row my-2 lg:h-40 lg:w-full h-52 w-52 px-1 mx-1 justify-between align-middle hover:cursor-pointer hover:outline-sky-400">
+    <Card className="lg:flex-row my-2 lg:mx-auto lg:h-40 lg:w-11/12 h-52 w-52 px-1 mx-1 justify-between align-middle hover:cursor-pointer hover:outline-sky-400">
       <div className="lg:w-2/12 my-auto mx-auto">
         <Image src={project.common.thumb?'./img/thumb/'+project.common.thumb:'./img/thumb/default.jpg'} width={125} height={125} alt={project[lang].title} className="object-cover rounded-md p-2" />
       </div>
