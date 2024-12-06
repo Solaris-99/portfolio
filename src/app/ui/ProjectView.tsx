@@ -42,6 +42,7 @@ export default function ProjectView({ project, lang }: { project: projectItem, l
                         <Button
                         href={project.common.codeUrl}
                         as={Link}
+                        isExternal
                         color="primary"
                         showAnchorIcon
                         variant="solid"
