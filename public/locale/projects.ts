@@ -164,7 +164,24 @@ export const projects : Array<projectItem> = [
             title: "MovieCube",
             description: "Sitio web para la tienda de películas ficticia MovieCube, donde la premisa es: Compra una película y es tuya para siempre. El sitio posee registro y login de usuarios, asi también como un backoffice para agregar y modificar las películas. La opción de comprar también esta simulada. Este sitio web fue construido usando un modelo de capas."
         }
-
+    },
+    {
+        common:{
+            name: "java-shell",
+            type: "personal",
+            begin: new Date(2024, 11, 2),
+            end: new Date(2024, 11, 5),
+            codeUrl: "https://github.com/Solaris-99/codecrafters-shell-java",
+            tech: ["java", "bash"],
+        },
+        en:{
+            title: "Java Shell",
+            description: "A challenge from the Build Your Own Shell of codecrafters.io. It supports directory navigation, program execution, and some other builtins. It has a tokenizer, so arguments (and commands) can be quoted."
+        },
+        es:{
+            title: "Java Shell",
+            description: "Un desafió de codecrafters.io. Esta shell soporta navegación entre directorios, ejecución de programas y algunos otros programas integrados. También soporta argumentos con comillas dobles y simples."
+        }
     }
 ]
 
