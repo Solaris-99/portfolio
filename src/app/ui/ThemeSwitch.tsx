@@ -17,7 +17,10 @@ export default function ThemeSwitch({handleTheme, lang}: {handleTheme: ()=>void,
         )
       }
     >
-      {lang=="en"?"Dark Mode":"Modo oscuro"}
+      <span className="hidden sm:inline">
+        {lang=="en"?"Dark Mode":"Modo oscuro"}
+      </span>
+
     </Switch>
   );
 }
