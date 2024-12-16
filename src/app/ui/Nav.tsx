@@ -46,7 +46,7 @@ export default function Nav({lang, setLang, className}: {lang:"en"| "es", setLan
         </NavbarItem>
       </NavbarContent>
       <NavbarContent justify="end">
-        <NavbarItem className="hidden lg:flex">
+        <NavbarItem >
           <Switch size="sm" color="default" onClick={()=>setLang()}>{lang.toUpperCase()}</Switch>
         </NavbarItem>
         <NavbarItem>
