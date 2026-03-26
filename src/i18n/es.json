@@ -1,0 +1,25 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "projects": "Proyectos"
+  },
+  "hero": {
+    "greeting": "Hola, soy Emanuel",
+    "description": "Un desarrollador apasionado creando experiencias tecnológicas modernas y estéticas. Bienvenido a mi portafolio.",
+    "cta": "Ver mi Trabajo"
+  },
+  "projects": {
+    "title": "Proyectos Destacados",
+    "viewGithub": "Ver en GitHub",
+    "items": {
+      "project1": {
+        "title": "Motor Cuántico",
+        "description": "Un motor de computación de alto rendimiento experimental construido con Rust y WebAssembly para procesamiento en paralelo en el navegador."
+      },
+      "project2": {
+        "title": "Astra Analytics",
+        "description": "Un panel de visualización de datos en tiempo real con gráficos 3D totalmente interactivos y herramientas de modelado predictivo."
+      }
+    }
+  }
+}

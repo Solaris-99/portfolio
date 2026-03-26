@@ -1,0 +1,25 @@
+{
+  "nav": {
+    "home": "Home",
+    "projects": "Projects"
+  },
+  "hero": {
+    "greeting": "Hello, I'm Emanuel",
+    "description": "A passionate developer building modern and aesthetic tech experiences. Welcome to my portfolio.",
+    "cta": "View My Work"
+  },
+  "projects": {
+    "title": "Selected Projects",
+    "viewGithub": "View on GitHub",
+    "items": {
+      "project1": {
+        "title": "Quantum Engine",
+        "description": "An experimental high-performance computation engine built with Rust and WebAssembly for browser-based parallel processing."
+      },
+      "project2": {
+        "title": "Astra Analytics",
+        "description": "A real-time data visualization dashboard featuring fully interactive 3D charts and predictive modeling tools."
+      }
+    }
+  }
+}
