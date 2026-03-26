@@ -15,6 +15,7 @@ export const Navbar = () => {
         
         <ul className={styles.links}>
           <li><a href="#home">{t('nav.home')}</a></li>
+          <li><a href="#experience">{t('nav.experience')}</a></li>
           <li><a href="#projects">{t('nav.projects')}</a></li>
         </ul>
 

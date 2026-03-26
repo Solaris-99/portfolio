@@ -1,24 +1,58 @@
 {
   "nav": {
     "home": "Home",
+    "experience": "Experience",
     "projects": "Projects"
   },
   "hero": {
-    "greeting": "Hello, I'm Emanuel",
-    "description": "A passionate developer building modern and aesthetic tech experiences. Welcome to my portfolio.",
+    "greeting": "Hi, I'm Emanuel",
+    "role": "Full Stack Developer",
+    "description": "Experienced in building scalable applications using Node.js, NestJS, and React. Strong focus on process optimization through automation and data analysis.",
     "cta": "View My Work"
+  },
+  "experience": {
+    "title": "Experience",
+    "jobs": {
+      "0": {
+        "role": "Full Stack Developer (Freelance)",
+        "period": "Nov 2025 – Present",
+        "description": "Comprehensive development of a financial aid platform (Control) using MVC. Built backend with NestJS & PostgreSQL, and modern UI with React & Shadcn. Strict use of TypeScript for robustness."
+      },
+      "1": {
+        "role": "Data Analyst / Web Developer (Freelance)",
+        "period": "May 2025 – Nov 2025",
+        "description": "Automated financial workflows via Google AppsScript, integrating APIs to Google Sheets. Developed and deployed static websites optimized on Cloudflare."
+      },
+      "2": {
+        "role": "Data Analyst SSr / Jr @ Arbusta",
+        "period": "Oct 2020 – Present",
+        "description": "Technical leadership in creating automation scripts for large-scale projects (Mercado Libre, Nuqlea). Optimized data entry and processing with Python and SQL. Data visualization with Google Cloud."
+      }
+    }
   },
   "projects": {
     "title": "Selected Projects",
     "viewGithub": "View on GitHub",
     "items": {
-      "project1": {
-        "title": "Quantum Engine",
-        "description": "An experimental high-performance computation engine built with Rust and WebAssembly for browser-based parallel processing."
+      "ctrl-x": {
+        "title": "Control (Fintech)",
+        "description": "A web application for controlling personal financial movements for a small business. Built with TypeScript, NestJS, PostgreSQL, React, Shadcn, Tailwind."
       },
-      "project2": {
-        "title": "Astra Analytics",
-        "description": "A real-time data visualization dashboard featuring fully interactive 3D charts and predictive modeling tools."
+      "pasos": {
+        "title": "Pasos (System Management)",
+        "description": "Full Stack backoffice application for a team of psychologists to track patient records and data entries."
+      },
+      "yt-audio-downloader": {
+        "title": "YT Audio Downloader",
+        "description": "High-performance YouTube audio extraction tool with a Rust backend for efficient processing."
+      },
+      "codecrafters-shell": {
+        "title": "Java Shell Implementation",
+        "description": "A custom low-level Shell implementation in Java, demonstrating deep knowledge of operating systems. Built for the Codecrafters Shell Challenge."
+      },
+      "media-aggregator": {
+        "title": "Media Aggregator",
+        "description": "Desktop application built with Electron and SQLite to manage and visualize local multimedia resources."
       }
     }
   }
