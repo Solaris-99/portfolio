@@ -12,7 +12,7 @@ export const projects: Project[] = [
   {
     id: 'pasos',
     githubUrl: 'https://github.com/Solaris-99/TP_CIFUENTES_DELCANTO',
-    imageUrl: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://github.com/Solaris-99/TP_CIFUENTES_DELCANTO/raw/main/src/assets/images/pasos_full.png'
   },
   {
     id: 'yt-audio-downloader',
